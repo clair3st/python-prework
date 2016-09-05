@@ -2,7 +2,7 @@
 
 #print string
 print "Mary had a little lamb"
-# formated variable
+# formated variable, use single quotes for short strings
 print "Its fleece was white as %s" % 'snow'
 print "And everywhere that Mary went."
 # multiplies the print 10 times, get 10 '.'
@@ -23,5 +23,6 @@ end11 = "e"
 end12 = "r"
 
 # Concats all strings together, the ',' makes both print on the same line
+# could have on the same line but > 80 characters is bad style
 print end1 + end2 + end3 + end4 + end5 + end6,
 print end7 + end8 + end9 + end10 + end11 + end12
