@@ -23,7 +23,6 @@ script, from_file, to_file = argv
 
 # In one line:
 open(to_file, 'w').write(open(from_file).read())
-
 # operating system may limit amount of files open, clean up
 # out_file.close()
 # in_file.close()
