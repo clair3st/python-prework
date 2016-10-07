@@ -18,6 +18,9 @@ class Cat(Animal):
         # cat has-a name
         self.name = name
 
+        def say_name():
+            print 'my name is ', name
+
 # Person is-a object
 class Person(object):
     def __init__(self, name):
@@ -58,7 +61,7 @@ satan = Cat("Satan")
 mary = Person("Mary")
 
 # Mary has a pet Satan
-mary.pet = Satan
+mary.pet = satan
 
 # frank is a Employee
 frank = Employee("Frank", 120000)
