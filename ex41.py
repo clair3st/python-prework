@@ -4,7 +4,7 @@ import random
 from urllib import urlopen
 import sys
 
-WORD_URL = "hyyp://learncodethehardway.org/words.txt"
+WORD_URL = "http://learncodethehardway.org/words.txt"
 WORDS = []
 
 PHRASES = {
@@ -28,7 +28,7 @@ if len(sys.argv) == 2 and sys.argv[1] == "english":
     PHRASE_FIRST = True
 
 # load up the words from the website
-for work in urlopen(WORD_URL).readlines():
+for word in urlopen(WORD_URL).readlines():
     WORDS.append(word.strip())
 
 
@@ -70,7 +70,7 @@ try:
 
         for snippet in snippets:
             phrase = PHRASES[snippet]
-            question, ansewer = convert(snippet, phrase)
+            question, answer = convert(snippet, phrase)
             if PHRASE_FIRST:
                 question, answer = answer, question
 
