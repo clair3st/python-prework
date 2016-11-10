@@ -132,3 +132,19 @@ def count(sequence, item):
     for i in sequence:
         if i == item: answer += 1
     return answer
+
+
+# TODO: Define a function called purify that takes in a list of numbers, removes all odd numbers in the list, and returns the result.
+def purify(number_list):
+    answer = []
+    for i in number_list:
+        if i%2 == 0: answer.append(i)
+    return answer
+
+
+#TODO: Define a function called product that takes a list of integers as input and returns the product of all of the elements in the list.
+def product (number_list):
+    answer = 1
+    for i in number_list:
+        answer *= i
+    return answer
