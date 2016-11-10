@@ -158,3 +158,13 @@ def remove_duplicates(list_eg):
         else:
             answer.append(i)
     return answer
+
+#TODO: Write a function called median that takes a list as an input and returns the median value of the list.
+def median(input_list):
+    input_list = sorted(input_list)
+    length = len(input_list)
+    if length%2 == 0:
+        answer = (input_list[length/2] + input_list[(length-1)/2]) / 2.0
+    else:
+        answer = input_list[length//2]
+    return answer
