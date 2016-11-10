@@ -148,3 +148,13 @@ def product (number_list):
     for i in number_list:
         answer *= i
     return answer
+
+# TODO: Write a function remove_duplicates that takes in a list and removes elements of the list that are the same.
+def remove_duplicates(list_eg):
+    answer = []
+    for i in list_eg:
+        if i in answer:
+            continue
+        else:
+            answer.append(i)
+    return answer
