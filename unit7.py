@@ -1,3 +1,4 @@
+# Unit 7: Battleship
 from random import randint
 
 # initialize game with board
