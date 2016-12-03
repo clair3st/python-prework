@@ -19,5 +19,19 @@ def fibs_rabbits(n, k):
     with k brood size'''
     if n is 0 or n is 1:
         return 1
+    if n is 2:
+        return k
+    if n <= 4:
+        return fibs_rabbits(n-1, k) + fibs_rabbits(n-2, k)
     else:
-        return (fibs_rabbits(n-1, k) + k * fibs_rabbits(n-2, k))
+        return (fibs_rabbits(n-1, k) + (k * fibs_rabbits(n-2, k)))
+
+def highest_GC_content(d):
+    x = d.split('\n')
+    percents = []
+    def GC_content(s):
+        return ((float(s.count('G'))+float(s.count('C')))/float(len(s)))*100
+    for i in range(1, len(x), 2):
+        percents.append(GC_content(x[i]))
+    highest_GC = index(max(percents))
+    return highest_GC #TODO: need to work out how to slit so get whole DNA strand, also need to work out how to return result
