@@ -16,5 +16,5 @@
 
 The first 44 exercises from learn python the hard way.
 
-![Source](https://learnpythonthehardway.org/)
+(https://learnpythonthehardway.org/)
 
