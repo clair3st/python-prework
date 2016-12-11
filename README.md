@@ -1,8 +1,8 @@
 # python-prework
 
-This repository holds practise code for Codefellows Python 401 course.
+##This repository holds practise code for Codefellows Python 401 course.
 
-From the Codecademys Python stream this includes:
+**Codecademy:**
 
 - Unit 3: PygLatin - part 10
 - Unit 4: Taking a Vacation - part 7
@@ -11,3 +11,10 @@ From the Codecademys Python stream this includes:
 - Unit 7: Battleship
 - Unit 8: Practice makes perfect
 - Unit 9: Exam statistics
+
+**Learn Python the hard way**
+
+The first 44 exercises from learn python the hard way.
+
+![Source](https://learnpythonthehardway.org/)
+
